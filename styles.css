@@ -1,14 +1,17 @@
 :root {
-  --neon-border-color: red;
+  --neon-border-color: rgb(255, 0, 0);
+}
+* {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
 }
 body {
-  /* background: linear-gradient(124deg, #8ec5fc, #e0c3fc, #80d0c7);
-  background-size: 800% 800%; */
   background: rgb(0, 0, 0);
   background: linear-gradient(
     132deg,
     rgba(0, 0, 0, 1) 17%,
-    rgba(40, 18, 13, 1) 58%,
+    rgb(24, 13, 10) 58%,
     rgba(60, 20, 2, 1) 88%
   );
   animation: bg 11s ease infinite;
@@ -27,13 +30,14 @@ body {
 }
 .note {
   /* display: inline-block; */
-  height: 180px;
-  margin: 100px 100px 30px 70px;
-  width: 350px;
+  z-index: 5;
+  height: 130px;
+  margin: 56px 100px 30px 50px;
+  width: 370px;
   font-size: 20px;
   border: 2px solid grey;
   border-radius: 5%;
-  padding: 0px 15px 15px 20px;
+  padding: 0px 0px 20px 20px;
   box-shadow: 5px 5px 2px 2px rgba(224, 195, 254, 0.22);
 
   background-color: black;
@@ -42,7 +46,7 @@ body {
 }
 
 .note:hover {
-  margin: 100px 100px 30px 70px;
+  margin: 57px 100px 30px 50px;
   cursor: pointer;
   padding-top: 1px;
   border: 1px;
@@ -54,9 +58,11 @@ body {
 
 footer {
   position: absolute;
-  top: 55rem;
-  left: 45%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   height: 2.5rem;
+  background-color: black;
 }
 
 footer p {
@@ -83,7 +89,7 @@ header {
     rgba(40, 18, 13, 1) 58%,
     rgba(60, 20, 2, 1) 88%
   );
-  height: 80px;
+  height: 62px;
   margin-top: 0;
   position: absolute;
   width: 100%;
