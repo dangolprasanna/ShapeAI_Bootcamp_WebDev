@@ -1,0 +1,92 @@
+:root {
+  --neon-border-color: red;
+}
+body {
+  /* background: linear-gradient(124deg, #8ec5fc, #e0c3fc, #80d0c7);
+  background-size: 800% 800%; */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    132deg,
+    rgba(0, 0, 0, 1) 17%,
+    rgba(40, 18, 13, 1) 58%,
+    rgba(60, 20, 2, 1) 88%
+  );
+  animation: bg 11s ease infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 17%;
+  }
+  50% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
+}
+.note {
+  /* display: inline-block; */
+  height: 180px;
+  margin: 100px 100px 30px 70px;
+  width: 350px;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-radius: 5%;
+  padding: 0px 15px 15px 20px;
+  box-shadow: 5px 5px 2px 2px rgba(224, 195, 254, 0.22);
+
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.note:hover {
+  margin: 100px 100px 30px 70px;
+  cursor: pointer;
+  padding-top: 1px;
+  border: 1px;
+  border-radius: 5%;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
+    0 0 15px var(--neon-border-color), inset 0 0 5px var(--neon-border-color),
+    0 0 20px var(--neon-border-color), inset 0 0 6px var(--neon-border-color);
+}
+
+footer {
+  position: absolute;
+  top: 55rem;
+  left: 45%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  text-decoration: underline;
+  text-decoration-color: white;
+  margin-top: 12px;
+  position: absolute;
+  top: 0px;
+  left: 43%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    132deg,
+    rgba(0, 0, 0, 1) 17%,
+    rgba(40, 18, 13, 1) 58%,
+    rgba(60, 20, 2, 1) 88%
+  );
+  height: 80px;
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
